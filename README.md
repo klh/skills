@@ -2,6 +2,8 @@
 
 Personal agent skills following the [agentskills.io](https://agentskills.io) specification. Built for Claude Code, Codex, Cursor, Windsurf, Gemini CLI, and 40+ other coding agents.
 
+Companion repos: **[speedy-claude](https://github.com/klh/speedy-claude)** (CLI speed tools + dotfiles) and **[addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)** (20 production engineering skills).
+
 ## Install
 
 ```bash
