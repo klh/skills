@@ -21,7 +21,7 @@ for skill_dir in skills/*/; do
   [ -f "$skill_dir/SKILL.md" ] || continue
 
   skill_name=$(basename "$skill_dir")
-  description=$(awk '/^---/{c++; next} c==1 && /^description:/{sub(/^description: */, ""); print; exit}' "$skill_dir/SKILL.md")
+  description=$(awk '/^---/{c++; next} c==1 && /^description:/{sub(/^description: */, ""); print; exit}' "$skill_dir/SKILL.md" | sed 's/\\/\\\\/g; s/"/\\"/g')
 
   entries+=("    {\"name\":\"${skill_name}\",\"description\":\"${description}\",\"files\":[\"SKILL.md\"]}")
 done
