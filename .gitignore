@@ -137,3 +137,10 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Claude Code project cache
+.claude/
+
+# Generated discovery index (rebuilt by npm run build:index)
+# Uncomment to exclude from git, or commit for convenience:
+# .well-known/agent-skills/index.json
