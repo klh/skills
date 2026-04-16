@@ -8,6 +8,10 @@ description: Zod schema validation patterns. Use when validating API inputs and 
 > Part of [klh/skills](https://github.com/klh/skills) — personal agent skills by [Klaus L. Hougesen](https://github.com/klh).
 > Install: `npx skills add klh/skills --skill zod-validation`
 
+## Overview
+
+Zod schema validation patterns for type-safe data validation.
+
 This skill covers Zod schema validation for type-safe data validation.
 
 ## When to Use

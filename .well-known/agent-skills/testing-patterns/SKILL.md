@@ -8,6 +8,16 @@ description: Jest testing patterns, factory functions, mocking strategies, and T
 > Part of [klh/skills](https://github.com/klh/skills) — personal agent skills by [Klaus L. Hougesen](https://github.com/klh).
 > Install: `npx skills add klh/skills --skill testing-patterns`
 
+## Overview
+
+Jest testing patterns, factory functions, mocking strategies, and TDD workflow.
+
+## When to Use
+
+- When writing unit tests or creating test factories
+- When following TDD red-green-refactor cycle
+- When setting up mocking strategies
+
 ## Testing Philosophy
 
 **Test-Driven Development (TDD):**

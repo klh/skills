@@ -33,6 +33,11 @@ Lit is a lightweight library (~5KB) for building fast, standards-based web compo
 
 **Core principle:** Every Lit component is a standard web component—interoperable across any framework or vanilla HTML.
 
+## When to Use
+
+- When creating Lit web components with TypeScript decorators, JSDoc documentation, Zod validation, and Playwright testing
+- When building reusable web components, design systems, or shareable UI elements that work across frameworks
+
 ## Component Structure Pattern
 
 Follow this 7-point pattern for every Lit component:

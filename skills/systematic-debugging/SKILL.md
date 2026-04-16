@@ -8,6 +8,15 @@ description: Four-phase debugging methodology with root cause analysis. Use when
 > Part of [klh/skills](https://github.com/klh/skills) — personal agent skills by [Klaus L. Hougesen](https://github.com/klh).
 > Install: `npx skills add klh/skills --skill systematic-debugging`
 
+## Overview
+
+Four-phase debugging methodology with root cause analysis. Emphasizes NO FIXES WITHOUT ROOT CAUSE FIRST.
+
+## When to Use
+
+- When investigating bugs or troubleshooting unexpected behavior
+- When fixing test failures
+
 ## Core Principle
 
 **NO FIXES WITHOUT ROOT CAUSE INVESTIGATION FIRST.**

@@ -8,6 +8,15 @@ description: Find bugs, security vulnerabilities, and code quality issues in loc
 > Part of [klh/skills](https://github.com/klh/skills) — personal agent skills by [Klaus L. Hougesen](https://github.com/klh).
 > Install: `npx skills add klh/skills --skill find-bugs`
 
+## Overview
+
+Finds bugs, security vulnerabilities, and code quality issues in local branch changes.
+
+## When to Use
+
+- When asked to review changes or find bugs
+- When performing a security review or code audit on the current branch
+
 Review changes on this branch for bugs, security vulnerabilities, and code quality issues.
 
 ## Phase 1: Complete Input Gathering

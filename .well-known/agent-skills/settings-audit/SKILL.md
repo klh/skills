@@ -8,6 +8,16 @@ description: Analyze a repository to generate recommended Claude Code settings.j
 > Part of [klh/skills](https://github.com/klh/skills) — personal agent skills by [Klaus L. Hougesen](https://github.com/klh).
 > Install: `npx skills add klh/skills --skill settings-audit`
 
+## Overview
+
+Analyzes a repository to generate recommended Claude Code settings.json permissions. Detects tech stack, build tools, and monorepo structure.
+
+## When to Use
+
+- When setting up a new project
+- When auditing existing settings
+- When determining which read-only bash commands to allow
+
 Analyze this repository and generate recommended Claude Code `settings.json` permissions for read-only commands.
 
 ## Phase 1: Detect Tech Stack

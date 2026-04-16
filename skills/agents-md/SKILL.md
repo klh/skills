@@ -8,6 +8,16 @@ description: This skill should be used when the user asks to "create AGENTS.md",
 > Part of [klh/skills](https://github.com/klh/skills) — personal agent skills by [Klaus L. Hougesen](https://github.com/klh).
 > Install: `npx skills add klh/skills --skill agents-md`
 
+## Overview
+
+Guides creation and maintenance of AGENTS.md files, keeping agent instructions concise and referencing local skills.
+
+## When to Use
+
+- When asked to "create AGENTS.md" or "update AGENTS.md"
+- When asked to "maintain agent docs" or "set up CLAUDE.md"
+- When needing to keep agent instructions concise
+
 AGENTS.md is the canonical agent-facing documentation. Keep it minimal—agents are capable and don't need hand-holding.
 
 ## File Setup

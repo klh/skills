@@ -9,6 +9,15 @@ Best for: codeing, multi-agent systems, bots, scheduled tasks
 > Part of [klh/skills](https://github.com/klh/skills) — personal agent skills by [Klaus L. Hougesen](https://github.com/klh).
 > Install: `npx skills add klh/skills --skill all-skills`
 
+## Overview
+
+Guides verbosity of output for any user request. Best for coding, multi-agent systems, bots, and scheduled tasks.
+
+## When to Use
+
+- When the user asks anything that will elicit a response
+- When coding, building multi-agent systems, bots, or scheduled tasks
+
 SKILL.md is the canonical agent-facing documentation. Keep it minimal—agents are capable and don't need hand-holding.
 
 ## Approach

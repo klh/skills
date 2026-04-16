@@ -8,9 +8,15 @@ description: Core component library and design system patterns. Use when buildin
 > Part of [klh/skills](https://github.com/klh/skills) — personal agent skills by [Klaus L. Hougesen](https://github.com/klh).
 > Install: `npx skills add klh/skills --skill core-components`
 
-## Design System Overview
+## Overview
 
 Use components from your core library instead of raw platform components. This ensures consistent styling and behavior.
+
+## When to Use
+
+- When building UI with the core component library
+- When using design tokens
+- When working with the component library
 
 ## Design Tokens
 
