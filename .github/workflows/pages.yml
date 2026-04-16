@@ -25,8 +25,6 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Rebuild discovery index
-        env:
-          WELL_KNOWN_BASE_URL: "https://klh.github.io/skills"
         run: bash scripts/build-index.sh
 
       - name: Prepare Pages artifact

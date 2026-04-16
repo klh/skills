@@ -3,33 +3,32 @@ set -euo pipefail
 
 INDEX_DIR=".well-known/agent-skills"
 INDEX_FILE="$INDEX_DIR/index.json"
-SCHEMA="https://schemas.agentskills.io/discovery/0.2.0/schema.json"
-BASE_URL="${WELL_KNOWN_BASE_URL:-}"
 
 mkdir -p "$INDEX_DIR"
 
-# Collect skills
+# Copy SKILL.md files into .well-known so npx skills can fetch them
+# npx skills expects: <base>/.well-known/agent-skills/<name>/SKILL.md
+for skill_dir in skills/*/; do
+  [ -f "$skill_dir/SKILL.md" ] || continue
+  skill_name=$(basename "$skill_dir")
+  mkdir -p "$INDEX_DIR/$skill_name"
+  cp "$skill_dir/SKILL.md" "$INDEX_DIR/$skill_name/SKILL.md"
+done
+
+# Collect skills — use npx skills format (files array, not RFC v0.2.0 type/url/digest)
 entries=()
 for skill_dir in skills/*/; do
   [ -f "$skill_dir/SKILL.md" ] || continue
 
   skill_name=$(basename "$skill_dir")
-  digest="sha256:$(shasum -a 256 "$skill_dir/SKILL.md" | cut -d' ' -f1)"
   description=$(awk '/^---/{c++; next} c==1 && /^description:/{sub(/^description: */, ""); print; exit}' "$skill_dir/SKILL.md")
 
-  if [ -n "$BASE_URL" ]; then
-    skill_url="${BASE_URL%/}/skills/${skill_name}/SKILL.md"
-  else
-    skill_url="/skills/${skill_name}/SKILL.md"
-  fi
-
-  entries+=("    {\"name\":\"${skill_name}\",\"type\":\"skill-md\",\"description\":\"${description}\",\"url\":\"${skill_url}\",\"digest\":\"${digest}\"}")
+  entries+=("    {\"name\":\"${skill_name}\",\"description\":\"${description}\",\"files\":[\"SKILL.md\"]}")
 done
 
 # Write index.json
 exec 3>"$INDEX_FILE"
 echo "{" >&3
-echo "  \"\$schema\": \"$SCHEMA\"," >&3
 echo "  \"skills\": [" >&3
 
 for i in "${!entries[@]}"; do
