@@ -24,7 +24,7 @@ Monorepo of agent skills following the [agentskills.io](https://agentskills.io) 
 ## Publishing
 
 Others install via:
-- `npx skills add klaushougesen/skills` — clone-based discovery
+- `npx skills add klh/skills` — clone-based discovery
 - `npx skills add https://klaushougesen.github.io/skills/.well-known/agent-skills/` — .well-known URL discovery
 
 ## Skill Migration Status

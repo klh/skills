@@ -6,13 +6,13 @@ My custom agent skills, following the [agentskills.io](https://agentskills.io) s
 
 ```bash
 # Install all skills
-npx skills add klaushougesen/skills
+npx skills add klh/skills
 
 # Install a specific skill
-npx skills add klaushougesen/skills --skill cli-speed-tools
+npx skills add klh/skills --skill cli-speed-tools
 
 # List available skills
-npx skills add klaushougesen/skills --list
+npx skills add klh/skills --list
 ```
 
 ## Skills

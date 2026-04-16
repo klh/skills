@@ -5,6 +5,9 @@ description: Use when listing files, searching file contents, finding files by n
 
 # CLI Speed Tools
 
+> Part of [klh/skills](https://github.com/klh/skills) — personal agent skills by [Klaus L. Hougesen](https://github.com/klh).
+> Install: `npx skills add klh/skills --skill cli-speed-tools`
+
 ## Overview
 Modern CLI tools provide 10-100x speed improvements over standard utilities while adding useful features like git status, syntax highlighting, and fuzzy search.
 
