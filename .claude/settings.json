@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(bash scripts/*)",
+      "Bash(shasum *)",
+      "Bash(jq *)",
+      "Bash(chmod *)",
+      "Bash(mkdir *)",
+      "Bash(command cp *)",
+      "Bash(ln *)",
+      "Bash(head skills/*)"
+    ]
+  }
+}
