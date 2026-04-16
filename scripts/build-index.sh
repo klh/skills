@@ -4,6 +4,7 @@ set -euo pipefail
 INDEX_DIR=".well-known/agent-skills"
 INDEX_FILE="$INDEX_DIR/index.json"
 SCHEMA="https://schemas.agentskills.io/discovery/0.2.0/schema.json"
+BASE_URL="${WELL_KNOWN_BASE_URL:-}"
 
 mkdir -p "$INDEX_DIR"
 
@@ -16,7 +17,13 @@ for skill_dir in skills/*/; do
   digest="sha256:$(shasum -a 256 "$skill_dir/SKILL.md" | cut -d' ' -f1)"
   description=$(awk '/^---/{c++; next} c==1 && /^description:/{sub(/^description: */, ""); print; exit}' "$skill_dir/SKILL.md")
 
-  entries+=("    {\"name\":\"${skill_name}\",\"type\":\"skill-md\",\"description\":\"${description}\",\"url\":\"/skills/${skill_name}/SKILL.md\",\"digest\":\"${digest}\"}")
+  if [ -n "$BASE_URL" ]; then
+    skill_url="${BASE_URL%/}/skills/${skill_name}/SKILL.md"
+  else
+    skill_url="/skills/${skill_name}/SKILL.md"
+  fi
+
+  entries+=("    {\"name\":\"${skill_name}\",\"type\":\"skill-md\",\"description\":\"${description}\",\"url\":\"${skill_url}\",\"digest\":\"${digest}\"}")
 done
 
 # Write index.json
