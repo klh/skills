@@ -1,7 +1,7 @@
 ---
 name: all-skills
-description: This skill should be used when the user asks ANYTHING taht will elicit a response. Guides verbosity of output.
-Best for: codeing, multi-agent systems, bots, scheduled tasks
+description: This skill should be used when the user asks ANYTHING that will elicit a response. Guides verbosity of output.
+Best for: coding, multi-agent systems, bots, scheduled tasks
 ---
 
 # Maintaining SKILL.md
@@ -17,6 +17,25 @@ Guides verbosity of output for any user request. Best for coding, multi-agent sy
 
 - When the user asks anything that will elicit a response
 - When coding, building multi-agent systems, bots, or scheduled tasks
+
+## Recommended Skills
+
+Additional skills from [speedy-claude](https://github.com/klh/speedy-claude):
+
+```bash
+# Install all from speedy-claude (includes addyosmani/agent-skills + custom skills)
+npx skills add klh/speedy-claude -g -y
+```
+
+Key skills from [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills):
+- `spec-driven-development` — create specs before coding
+- `test-driven-development` — drive development with tests
+- `code-review-and-quality` — multi-axis code review
+- `security-and-hardening` — harden code against vulnerabilities
+- `performance-optimization` — optimize application performance
+- `context-engineering` — optimize agent context setup
+- `planning-and-task-breakdown` — break work into ordered tasks
+- `using-agent-skills` — meta-skill for discovering and invoking skills
 
 SKILL.md is the canonical agent-facing documentation. Keep it minimal—agents are capable and don't need hand-holding.
 

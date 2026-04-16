@@ -1,7 +1,7 @@
 {
   "skills": [
     {"name":"agents-md","description":"This skill should be used when the user asks to \"create AGENTS.md\", \"update AGENTS.md\", \"maintain agent docs\", \"set up CLAUDE.md\", or needs to keep agent instructions concise. Guides discovery of local skills and enforces minimal documentation style.","files":["SKILL.md"]},
-    {"name":"all-skills","description":"This skill should be used when the user asks ANYTHING taht will elicit a response. Guides verbosity of output.","files":["SKILL.md"]},
+    {"name":"all-skills","description":"This skill should be used when the user asks ANYTHING that will elicit a response. Guides verbosity of output.","files":["SKILL.md"]},
     {"name":"cli-speed-tools","description":"Use when listing files, searching file contents, finding files by name, or viewing files in terminal. Replace slow standard tools (ls, grep, find, cat) with faster modern alternatives.","files":["SKILL.md"]},
     {"name":"code-simplifier","description":"Simplifies and refines code for clarity, consistency, and maintainability while preserving all functionality. Use when asked to \"simplify code\", \"clean up code\", \"refactor for clarity\", \"improve readability\", or review recently modified code for elegance. Focuses on project-specific best practices.","files":["SKILL.md"]},
     {"name":"core-components","description":"Core component library and design system patterns. Use when building UI, using design tokens, or working with the component library.","files":["SKILL.md"]},
