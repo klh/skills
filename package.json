@@ -1,0 +1,19 @@
+{
+  "name": "@klaushougesen/skills",
+  "version": "0.0.0",
+  "private": true,
+  "description": "My custom skills for Agents",
+  "workspaces": [
+    "skills/*"
+  ],
+  "scripts": {
+    "build:index": "bash scripts/build-index.sh",
+    "validate": "npx skills-ref validate ./skills/*/SKILL.md",
+    "list": "npx skills ls"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klaushougesen/skills.git"
+  }
+}
