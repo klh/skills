@@ -16,7 +16,7 @@ for skill_dir in skills/*/; do
   digest="sha256:$(shasum -a 256 "$skill_dir/SKILL.md" | cut -d' ' -f1)"
   description=$(awk '/^---/{c++; next} c==1 && /^description:/{sub(/^description: */, ""); print; exit}' "$skill_dir/SKILL.md")
 
-  entries+=("    {\"name\":\"${skill_name}\",\"type\":\"skill-md\",\"description\":\"${description}\",\"url\":\"/.well-known/agent-skills/${skill_name}/SKILL.md\",\"digest\":\"${digest}\"}")
+  entries+=("    {\"name\":\"${skill_name}\",\"type\":\"skill-md\",\"description\":\"${description}\",\"url\":\"/skills/${skill_name}/SKILL.md\",\"digest\":\"${digest}\"}")
 done
 
 # Write index.json

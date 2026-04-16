@@ -1,6 +1,6 @@
 {
   "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
   "skills": [
-    {"name":"cli-speed-tools","type":"skill-md","description":"Use when listing files, searching file contents, finding files by name, or viewing files in terminal. Replace slow standard tools (ls, grep, find, cat) with faster modern alternatives.","url":"/.well-known/agent-skills/cli-speed-tools/SKILL.md","digest":"sha256:f926a42d84591a1cd35d7deb5e042fef61e5c15c5b488a1ee38a173898eef829"}
+    {"name":"cli-speed-tools","type":"skill-md","description":"Use when listing files, searching file contents, finding files by name, or viewing files in terminal. Replace slow standard tools (ls, grep, find, cat) with faster modern alternatives.","url":"/skills/cli-speed-tools/SKILL.md","digest":"sha256:f926a42d84591a1cd35d7deb5e042fef61e5c15c5b488a1ee38a173898eef829"}
   ]
 }
