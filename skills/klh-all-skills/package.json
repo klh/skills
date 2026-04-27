@@ -1,0 +1,13 @@
+{
+  "name": "@klh/skill-klh-all-skills",
+  "version": "1.0.0",
+  "description": "This skill should be used when the user asks ANYTHING taht will elicit a response. Guides verbosity of output.",
+  "main": "SKILL.md",
+  "files": [
+    "SKILL.md"
+  ],
+  "keywords": [
+    "agent-skills"
+  ],
+  "license": "MIT"
+}

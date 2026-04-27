@@ -11,7 +11,7 @@ Companion repos: **[speedy-claude](https://github.com/klh/speedy-claude)** (CLI 
 npx skills add klh/skills -g -y
 
 # Install a specific skill
-npx skills add klh/skills --skill cli-speed-tools
+npx skills add klh/skills --skill klh-dispatch
 
 # Install from GitHub Pages (.well-known discovery)
 npx skills add https://klh.github.io/skills/ -g -y
@@ -24,19 +24,20 @@ npx skills add klh/skills --list
 
 | Skill | Purpose |
 |-------|---------|
-| [cli-speed-tools](skills/cli-speed-tools/) | Replace standard CLI tools (ls, grep, find, cat) with faster modern alternatives (eza, rg, fd, bat) |
-| [find-bugs](skills/find-bugs/) | Find bugs, security vulnerabilities, and code quality issues in local branch changes |
-| [systematic-debugging](skills/systematic-debugging/) | Four-phase root cause analysis methodology — no fixes without root cause first |
-| [code-simplifier](skills/code-simplifier/) | Simplify and refine code for clarity, consistency, and maintainability |
-| [testing-patterns](skills/testing-patterns/) | Jest testing patterns, factory functions, mocking strategies, and TDD workflow |
-| [zod-validation](skills/zod-validation/) | Zod schema validation patterns for API inputs and data validation |
-| [lit-dev](skills/lit-dev/) | Build Lit web components with TypeScript, JSDoc, Zod validation, and Playwright |
-| [core-components](skills/core-components/) | Core component library and design system patterns with design tokens |
-| [openapi-directory-first](skills/openapi-directory-first/) | Look up public API specs from OpenAPI directory before consulting training data |
-| [project-memory](skills/project-memory/) | Structured project memory tracking bugs, decisions, facts, and work history |
-| [agents-md](skills/agents-md/) | Create and maintain AGENTS.md files for agent-agnostic project instructions |
-| [settings-audit](skills/settings-audit/) | Generate recommended Claude Code settings.json based on detected tech stack |
-| [all-skills](skills/all-skills/) | Global behavior modifier — guides verbosity, efficiency, and output style |
+| [klh-dispatch](skills/klh-dispatch/) | Single entry-point orchestrator — detects task type and dispatches to the right skill |
+| [klh-cli-speed-tools](skills/klh-cli-speed-tools/) | Replace standard CLI tools (ls, grep, find, cat) with faster modern alternatives (eza, rg, fd, bat) |
+| [klh-find-bugs](skills/klh-find-bugs/) | Find bugs, security vulnerabilities, and code quality issues with Five Failure Modes checklist |
+| [klh-systematic-debugging](skills/klh-systematic-debugging/) | Four-phase root cause analysis methodology — no fixes without root cause first |
+| [klh-code-simplifier](skills/klh-code-simplifier/) | Simplify and refine code for clarity, consistency, and maintainability |
+| [klh-testing-patterns](skills/klh-testing-patterns/) | Jest testing patterns, factory functions, mocking strategies, and TDD workflow with RED checkpoint |
+| [klh-zod-validation](skills/klh-zod-validation/) | Zod schema validation patterns for API inputs and data validation |
+| [klh-lit-dev](skills/klh-lit-dev/) | Build Lit web components with TypeScript, JSDoc, Zod validation, and Playwright |
+| [klh-core-components](skills/klh-core-components/) | Core component library and design system patterns with design tokens |
+| [klh-openapi-directory-first](skills/klh-openapi-directory-first/) | Look up public API specs from OpenAPI directory before consulting training data |
+| [klh-project-memory](skills/klh-project-memory/) | Structured project memory tracking bugs, decisions, facts, and work history |
+| [klh-agents-md](skills/klh-agents-md/) | Create and maintain AGENTS.md files for agent-agnostic project instructions |
+| [klh-settings-audit](skills/klh-settings-audit/) | Generate recommended Claude Code settings.json based on detected tech stack |
+| [klh-all-skills](skills/klh-all-skills/) | Global behavior modifier — guides verbosity, efficiency, and output style |
 
 ## Development
 
